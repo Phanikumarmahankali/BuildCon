@@ -1,0 +1,164 @@
+* {
+  font-family: serif;
+}
+body {
+  background: linear-gradient(rgba(19, 209, 212, 0.7), rgba(212, 164, 164, 0.7)),
+    url(https://media.istockphoto.com/id/904951248/vector/blue-background-vector-eps-10-light-down-from-above-light-top-many-lights-on-top-lighting.jpg?s=612x612&w=0&k=20&c=lnZ2g2RKDJ2hWB6eV-j2LKTsIstggpA-axuGIW8r9r4=)
+      no-repeat center center/cover;
+}
+.section-padding {
+  padding: 100px 0;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+.carousel-item h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar-nav a:hover {
+  border-bottom: 5px solid #00ff55;
+  border-radius: 8px;
+  transition: 0.5s ease;
+}
+.navbar-light .navbar-brand {
+  color: #000;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: #000;
+}
+.navbar-light .navbar-nav .navbar-link {
+  color: #000;
+}
+.w-100 {
+  height: 100vh;
+}
+
+.btn {
+  max-width: 200px;
+  max-height: 50px;
+  border-radius: 10px;
+}
+.services .card-body i {
+  font-size: 50px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 125px;
+  }
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.5;
+    font-size: 12px;
+  }
+}
+
+
+/* Card hover effects */
+.card {
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  transition: all 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Optional: Add a subtle glow effect on hover */
+.card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Different hover effects for different card colors */
+.bg-dark:hover {
+  background-color: #343a40 !important;
+}
+
+.bg-info:hover {
+  background-color: #0dcaf0 !important;
+}
+
+.bg-warning:hover {
+  background-color: #ffc107 !important;
+}
+
+.bg-primary-subtle:hover {
+  background-color: #0d6efd !important;
+  color: white !important;
+}
+
+.bg-secondary:hover {
+  background-color: #6c757d !important;
+}
+
+.bg-success:hover {
+  background-color: #198754 !important;
+}
+
+/* Add a subtle zoom effect for card content */
+.card-title, .card p {
+  transition: all 0.3s ease;
+}
+
+.card:hover .card-title {
+  transform: scale(1.05);
+}
+
+/* Fix for image overflow */
+.card {
+  overflow: hidden;
+}
